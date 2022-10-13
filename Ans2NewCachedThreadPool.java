@@ -27,7 +27,7 @@ public class Ans2NewCachedThreadPool {
             }
             System.out.println(Thread.currentThread().getName());
         };
-        ExecutorService executorService = Executors.Ans2newCachedThreadPool();
+        ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i = 0; i <= 5; i++) {
             executorService.execute(task1);
             executorService.execute(task2);
