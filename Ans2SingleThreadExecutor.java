@@ -7,7 +7,7 @@ public class Ans2SingleThreadExecutor {
 
     public static void main(String[] args) {
 
-        ExecutorService executorService= Executors.Ans2newSingleThreadExecutor();
+        ExecutorService executorService= Executors.newSingleThreadExecutor();
 
         Runnable task1=()->
         {
