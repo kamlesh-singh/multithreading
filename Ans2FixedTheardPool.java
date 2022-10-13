@@ -14,7 +14,7 @@ public class Ans2FixedTheardPool{
         {
             System.out.println(Thread.currentThread().getName()+ " TASK 2");
         };
-        ExecutorService executorService = Executors.Ans2newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
         for (int i = 0; i <= 5; i++) {
             executorService.execute(task1);
         }
