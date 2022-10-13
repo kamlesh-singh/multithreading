@@ -1,9 +1,9 @@
 import com.sun.source.tree.SynchronizedTree;
 
-public class Synchro {
+  class Synchro {
 
     void display(int n){
-        synchronized(this){//synchronized block
+        synchronized(this){
             for(int i=1;i<=5;i++){
                 System.out.println(Thread.currentThread().getName()+ " "+  n);
                 try{
@@ -44,7 +44,7 @@ class Thread2 extends Thread {
 
 }
 
-class Ans3syncBlockExample {
+public class Ans3syncBlockExample {
     public static void main(String[] args) {
         Synchro obj = new Synchro();
         Thread1 t1=new Thread1(obj);
